@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Weather App</div>
+        <nav>
+            <a href="C:\Users\bhara\coding\internships\navbar_and_stopwatch\nav.html">Home</a>
+            <!-- <a href="#">About</a>
+            <a href="#">Contact</a> -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Check the Weather</h1>
+        <input type="text" id="location-input" placeholder="Enter a location" />
+        <div class="button-container">
+            <button onclick="fetchWeatherByInput()">Get Weather</button>
+            <button onclick="fetchWeatherByLocation()">Use My Location</button>
+        </div>
+
+        <div id="weather-info" class="weather-info">
+            <img id="weather-icon" alt="Weather icon" class="weather-icon" style="display:none;" />
+            <h2 id="city"></h2>
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
